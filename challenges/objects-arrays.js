@@ -1,34 +1,33 @@
-// ==== Objects ====
+ // ==== Objects ====
 
 /* 
   Given the following information about dinosaurs, create 3 objects: 
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
-
-// tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-
-// stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-
-// velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
-
-// Using your dinosaur objects, log answers to these questions:
+let dinosaurs = [
+  {"name": "Tyrannosaurus", "diet": "Carnivorous", "weight": "7000kg", "length": "12m", "timePeriod": "Late Cretaceous", roar(){return("RAWERSRARARWERSARARARRRR!")}},
+  {"name": "Stegosauraus", "diet": "Herbivore", "weight": "2000kg", "length": "9m", "timePeriod": "Late Jurassic" },
+  {"name": "Velociraptor", "diet": "Carnivorous", "weight": "15kg", "length": "1.8m", "timePeriod": "Late Cretaceous" }
+];
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(`The T-rex weighs ${dinosaurs[0].weight}`);
+
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(dinosaurs[2].diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(dinosaurs[1].length);
 
 // What time period did tyrannosaurus live in?
-console.log();
-
+console.log(dinosaurs[1].timePeriod);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(dinosaurs[0].roar());
+
+
 
 
 // ==== Arrays ====
@@ -47,16 +46,13 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 {"id":10,"first_name":"Hube","university":"Universitat Rovira I Virgili Tarragona","email":"hlethbrig9@foxnews.com"}]
 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  
-
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
 console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
-
 The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
-
 Log the result of your new array. */
 const contactInfo = [];
 console.log(contactInfo);
@@ -84,42 +80,31 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 {"animal_name":"Australian pelican","population":5,"scientific_name":"Pelecanus conspicillatus","state":"West Virginia"}];
 
 /* Request 1: .forEach()
-
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
-
 */
 const animalNames = [];
 console.log(animalNames);
 
 /* Request 2: .map()    
-
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
-
 */
 
 const lowerCase = [];
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
-
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
-
 */
 const largerPopulation = [];
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 
-
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
-
 */
 const populationTotal = 0;
 console.log(populationTotal);
 
 
 /* 
-
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
-
 */
-
