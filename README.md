@@ -85,3 +85,25 @@ In your solutions, it is essential that you follow best practices and produce cl
 ## Stretch Problems
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
+
+
+
+
+Describe the biggest difference between .forEach & .map.
+----.forEach takes a callback just calls a function on every element whereas .map iterates and returns transformed values and creates a new array
+
+What is the difference between a function and a method?
+----methods are functions withing classes.
+
+What is closure?
+----when functions enclosed in other functions have access to the variables in the outer scopes
+
+Describe the four rules of the 'this' keyword.
+1. Window/Global Object Binding: When in the global scope, the value of “this” will be the window/console Object.
+* 2. Implicit Binding - 'this' refers to whatever is left of the dot at call time. For example, if you have an Object called myObject, and you were wanting to call a function on it (myObject.function), 'this' applies to whatever proceeds the dot, which would be myObject.
+* 3. New Binding - Whenever an new object is created and returned through a constructor function, ‘this’ refers to that specific object.
+* 4. Explicit Binding - is used with functions, where you can use .call, .apply, or .bind to specifically point to where 'this' refers to.
+
+
+Why do we need super() in an extended class?
+---- it access the call functions on an objects parent by looking at what you're extending from. Any of our new attributes need to be passed into super. It’s calls the parent constructor, and super() sets all of the parents properties on the child
